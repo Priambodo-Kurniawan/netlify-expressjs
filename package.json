@@ -28,6 +28,6 @@
     "netlify-lambda": "^0.4.0",
     "serverless-http": "^1.6.0",
     "cors": "^2.8.4",
-		"request": "^2.88.0"
+    "request": "^2.88.0"
   }
 }
