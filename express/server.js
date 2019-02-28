@@ -5,13 +5,12 @@ const app = express();
 const bodyParser = require('body-parser');
 const request = require('request');
 const cors = require('cors');
-const path = require('path');
 app.use(cors());
 
 const router = express.Router();
 router.get('/', (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.sendFile(path.join(__dirname + '/index.html'));
+  res.write('<h1>Hello from Express.js!</h1>');
   res.end();
 });
 router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
